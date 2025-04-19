@@ -1,0 +1,564 @@
+/* ==================== GENERAL ==================== */
+/* ==================== HEADER ==================== */
+.header {
+    background-color: #f2e3f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    width: 48px;
+    height: auto;
+  }
+  
+  .navbar-center a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-center a:hover,
+  .navbar-center a.active {
+    color: #8F7193;
+    font-weight: 600;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar-right a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  .navbar-right button {
+    border: none;
+    background-color: #8F7193;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .navbar-right button:hover {
+    background-color: #7b6282;
+  }
+  
+  #langSwitcher {
+    background-color: transparent;
+    border: 2px solid #8F7193;
+    color: #8F7193;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #212121;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3 {
+    color: #2c2c2c;
+  }
+  
+  section {
+    padding: 80px 10%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .section-sub {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .how-it-works {
+    text-align: center;
+  }
+  
+  /* ==================== HERO ==================== */
+  .hero {
+    background-color: #e3cde7;
+    padding: 100px 10% 60px;
+    width: 100%;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    color: #1b1b1b;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .hero-desc {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hero-buttons .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .hero-image {
+    background-color: #f3f3f3; /* Fondo gris claro */
+    padding: 2rem;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 420px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* sombra para profundidad */
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+  
+  
+  /* ==================== BOOKING FILTER ==================== */
+  .booking-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    justify-content: center;
+  }
+  
+  .booking-filter select,
+  .booking-filter input[type="date"],
+  .booking-filter input[type="time"] {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+    font-size: 0.95rem;
+  }
+  
+  /* ==================== WHY CHOOSE US ==================== */
+  .why-choose {
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  
+  .why-icons-wrapper {
+    background-color: #dfcae1;
+    padding: 40px 10%;
+    text-align: center;
+  }
+  
+  .why-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .why-content img {
+    width: 300px;
+  }
+  
+  .why-list {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .why-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .why-icons img {
+    width: 140px;
+  }
+  
+  /* ==================== HEALTHCARE & HOSPITAL WRAPPER ==================== */
+  .healthcare-hospital-wrapper {
+    background-color: #dfcae1;
+    text-align: center;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .healthcare-hospital-wrapper img {
+    width: 180px;
+    max-width: 100%;
+  }
+  
+  /* ==================== SECTION WRAPPER BG ==================== */
+  .testimonial-wrapper {
+    background: linear-gradient(to bottom, #dfcae1 0%, #ffffff 100%);
+    padding: 80px 10%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* ==================== BUTTONS ==================== */
+  .btn {
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+  }
+  
+  .btn.primary {
+    background-color: #8F7193;
+    color: white;
+  }
+  
+  .btn.secondary {
+    background-color: transparent;
+    color: #8F7193;
+    border: 2px solid #8F7193;
+  }
+  
+  .btn.small {
+    padding: 0.5rem 1.2rem;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* ==================== HOW IT WORKS ==================== */
+
+  
+
+  .steps {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  
+  
+  .step {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .step img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+    padding: 12px;
+    background-color: #f2e3f8;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+  }
+  
+  .step img:hover {
+    transform: scale(1.05);
+  }
+  
+  .step h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .step p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  
+  /* ==================== PLANS ==================== */
+  .plans {
+    background-color: #ebd3f2;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .plan-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    width: 220px;
+    text-align: center;
+  }
+  
+  .plan-card img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+ /* ==================== TESTIMONIALS ==================== */
+.testimonials {
+    background: linear-gradient(to bottom, #dfcae1 0%, #ffffff 100%);
+    text-align: center;
+    width: 100%;
+    padding: 80px 10%;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .testimonial {
+    background: #e6ecf4;
+    padding: 1.5rem;
+    border-radius: 16px;
+    width: 320px;
+    font-size: 0.95rem;
+    text-align: left;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s;
+    position: relative;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  
+  .testimonial-header strong {
+    font-size: 1rem;
+    color: #222;
+    display: block;
+  }
+  
+  .testimonial-location {
+    font-size: 0.85rem;
+    color: #555;
+    display: block;
+  }
+  
+  .testimonial-rating {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8F7193;
+  }
+  
+  .testimonial-text {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+  }
+  
+  .dot.active {
+    background-color: #8F7193;
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  
+  /* ==================== FOOTER ==================== */
+  .footer {
+    background-color: #dfcae1;
+    padding: 60px 10% 30px;
+    color: #333;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 180px;
+  }
+  
+  .footer-col h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-logo {
+    width: 64px;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  
+  .footer-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .why-content {
+      flex-direction: column;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .booking-filter {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .plan-cards,
+    .steps,
+    .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
