@@ -52,8 +52,20 @@
           <select><option>Choose Specialization</option></select>
           <select><option>Video consultation only</option></select>
           <select><option>Select your Doctor</option></select>
-          <input type="date" placeholder="Date" />
-          <input type="time" placeholder="Time" />
+          <input
+          type="text"
+          placeholder="Select a date"
+          onfocus="(this.type='date')"
+          onblur="if(this.value==''){this.type='text'}"
+/>
+
+<input
+  type="text"
+  placeholder="Select a time"
+  onfocus="(this.type='time')"
+  onblur="if(this.value==''){this.type='text'}"
+/>
+
           <button class="btn filter">Search</button>
         </div>
       </section>
