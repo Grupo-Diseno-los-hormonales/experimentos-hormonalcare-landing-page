@@ -1,18 +1,23 @@
 /* ==================== GENERAL ==================== */
 /* ==================== HEADER ==================== */
 .header {
-    background-color: #f2e3f8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 10%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
+  background-color: #f2e3f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ddd;
+  position: static;
+  top: 0;
+  z-index: 999;
+
+  /* FIX scroll displacement */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
   .logo {
     width: 48px;
     height: auto;
@@ -587,10 +592,25 @@
   
     /* BOOKING FILTER */
     .booking-filter {
+      display: flex;
       flex-direction: column;
       align-items: stretch;
+      gap: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      margin: 2rem 0;
+      width: 100%;
     }
   
+    .booking-filter select,
+    .booking-filter input[type="date"],
+    .booking-filter input[type="time"],
+    .booking-filter button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 12px;
+    }
     .booking-filter select,
     .booking-filter input[type="date"],
     .booking-filter input[type="time"],
