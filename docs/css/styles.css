@@ -534,118 +534,122 @@
   }
   
   @media screen and (max-width: 768px) {
+    /* HEADER */
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar-center {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .navbar-right {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    /* HERO SECTION */
     .hero-content {
       flex-direction: column;
       text-align: center;
     }
   
-    @media screen and (max-width: 768px) {
-      /* Ya existente: hero-content, why-content, etc. */
-    
-      /* Ajustes para HEADER */
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-      }
-    
-      .navbar-center {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        width: 100%;
-        margin-top: 1rem;
-      }
-    
-      .navbar-right {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-    
-      /* HERO text adjustments */
-      .hero-text h1 {
-        font-size: 2.2rem;
-      }
-    
-      .hero-desc {
-        font-size: 1rem;
-      }
-    
-      .hero-buttons {
-        flex-direction: column;
-      }
-    
-      /* HERO image shrink */
-      .hero-image {
-        max-width: 100%;
-        padding: 1rem;
-      }
-    
-      .hero-image img {
-        max-width: 260px;
-      }
-    
-      /* Booking filter spacing */
-      .booking-filter select,
-      .booking-filter input[type="date"],
-      .booking-filter input[type="time"],
-      .booking-filter button {
-        width: 100%;
-      }
-    
-      /* Plan cards */
-      .plan-card {
-        width: 100%;
-        max-width: 300px;
-      }
-    
-      /* Testimonials */
-      .testimonial {
-        width: 100%;
-        max-width: 340px;
-      }
-    
-      /* Footer */
-      .footer-col {
-        align-items: center;
-        text-align: center;
-      }
-    
-      .footer-col ul {
-        padding-left: 0;
-      }
-    
-      .footer-bottom {
-        font-size: 0.75rem;
-        padding: 10px;
-      }
+    .hero-text h1 {
+      font-size: 2.2rem;
     }
-    
-
+  
+    .hero-desc {
+      font-size: 1rem;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+    }
+  
+    .hero-image {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  
+    .hero-image img {
+      max-width: 260px;
+    }
+  
+    /* BOOKING FILTER */
+    .booking-filter {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .booking-filter select,
+    .booking-filter input[type="date"],
+    .booking-filter input[type="time"],
+    .booking-filter button {
+      width: 100%;
+    }
+  
+    /* WHY SECTION */
     .why-content {
       flex-direction: column;
     }
   
+    /* PLANS */
+    .plan-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .plan-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    /* HOW IT WORKS */
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* TESTIMONIALS */
+    .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial {
+      width: 100%;
+      max-width: 340px;
+    }
+  
+    /* FOOTER */
     .footer-container {
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
   
-    .booking-filter {
-      flex-direction: column;
-      align-items: stretch;
+    .footer-col {
+      align-items: center;
+      text-align: center;
     }
   
-    .plan-cards,
-    .steps,
-    .testimonial-cards {
-      flex-direction: column;
-      align-items: center;
+    .footer-col ul {
+      padding-left: 0;
+    }
+
+    .footer-bottom {
+      font-size: 0.75rem;
+      padding: 10px;
     }
   }
-  
+
