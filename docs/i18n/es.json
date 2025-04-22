@@ -42,5 +42,17 @@
   "testimonialsDesc": "Descubre cómo HormonalCare está mejorando vidas a través del seguimiento médico eficiente y consultas virtuales.",
   "testimonial1Name": "Vizeh Robert",
   "testimonial1Location": "Lima, Perú",
-  "testimonial1Text": "“Gracias a HormonalCare, pude consultar con un especialista desde casa. La plataforma es intuitiva y me ahorró largas esperas en la clínica.”"
+  "testimonial1Text": "“Gracias a HormonalCare, pude consultar con un especialista desde casa. La plataforma es intuitiva y me ahorró largas esperas en la clínica.”",
+  "testimonial2Name": "Dr. Javier Meza",
+  "testimonial2Location": "Callao, Perú",
+  "testimonial2Text": "“Como endocrinólogo, HormonalCare me ayuda a organizar a mis pacientes, revisar resultados subidos y dar seguimiento de manera eficiente desde cualquier lugar.”",
+  "testimonial3Name": "Ana Lucía Pérez",
+  "testimonial3Location": "San Juan de Lurigancho",
+  "testimonial3Text": "“Solía esperar más de 2 semanas para una cita. Ahora, con HormonalCare, recibo ajustes de tratamiento en una sola llamada.”",
+  "register": "Registrarse",
+  "login": "Iniciar sesión",
+  "name": "Nombre",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "footerCopyright": "©2025 HormonalCare. Todos los derechos reservados."
 }
