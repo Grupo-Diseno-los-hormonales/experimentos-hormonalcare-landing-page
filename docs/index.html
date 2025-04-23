@@ -27,71 +27,77 @@
     </header>
 
     <main>
-      <!-- HERO SECTION -->
-      <section id="hero" class="hero">
-        <div class="hero-content">
-          <div class="hero-text">
-            <p class="hero-sub">Your digital ally in hormonal health.</p>
-            <h1>TRACK, UNDERSTAND,<br />AND IMPROVE YOUR<br />HORMONAL BALANCE</h1>
-            <p class="hero-desc">
-              HormonalCare helps you manage your health with expert endocrinologists,
-              personalized treatment plans, and real-time monitoring.
-            </p>
-            <div class="hero-buttons">
-              <a href="#plans" class="btn primary" data-i18n="bookNow">Book Now</a>
-              <a href="#features" class="btn secondary" data-i18n="seeFeatures">See all features</a>
-            </div>
-          </div>
-          <div class="hero-image">
-            <img src="images/medico.jpg" alt="Doctor with chart" />
-          </div>
-        </div>
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-sub">Your digital ally in hormonal health.</p>
+      <h1>TRACK, UNDERSTAND,<br />AND IMPROVE YOUR<br />HORMONAL BALANCE</h1>
+      <p class="hero-desc">
+        HormonalCare helps you manage your health with expert endocrinologists,
+        personalized treatment plans, and real-time monitoring.
+      </p>
+      <div class="hero-buttons">
+        <a href="#plans" class="btn primary" data-i18n="bookNow">Book Now</a>
+        <a href="#features" class="btn secondary" data-i18n="seeFeatures">See all features</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/medico.jpg" alt="Doctor with chart" />
+    </div>
+  </div>
 
-        <!-- BOOKING FILTER -->
-        <div class="booking-filter">
-          <select><option>Choose Specialization</option></select>
-          <select><option>Video consultation only</option></select>
-          <select><option>Select your Doctor</option></select>
-          <input
-          type="text"
-          placeholder="Select a date"
-          onfocus="(this.type='date')"
-          onblur="if(this.value==''){this.type='text'}"
-/>
+  <!-- BOOKING FILTER -->
+  <div class="booking-filter">
+    <select>
+      <option disabled selected>Choose Specialization</option>
+      <option>Endocrinology - Thyroid</option>
+      <option>Endocrinology - PCOS</option>
+      <option>Endocrinology - Menopause</option>
+      <option>Endocrinology - Diabetes</option>
+    </select>
 
-<input
-  type="text"
-  placeholder="Select a time"
-  onfocus="(this.type='time')"
-  onblur="if(this.value==''){this.type='text'}"
-/>
+    <select>
+      <option disabled selected>Consultation Type</option>
+      <option>Video consultation</option>
+      <option>In-person consultation</option>
+      <option>Follow-up only</option>
+    </select>
 
-          <button class="btn filter">Search</button>
-        </div>
-      </section>
+    <select>
+      <option disabled selected>Select your Doctor</option>
+      <option>Dr. Luis Caballero</option>
+      <option>Dr. Andrea Salas</option>
+      <option>Dr. Javier Meza</option>
+    </select>
 
-      <!-- HOW IT WORKS -->
-      <section id="features" class="how-it-works">
-        <h2 data-i18n="howWorks">How HormonalCare Works</h2>
-        <p class="section-sub">A simple and efficient process to help you connect with specialists and track your hormonal health.</p>
-        <div class="steps">
-          <div class="step">
-            <img src="images/profile.png" alt="Profile" />
-            <h3>Create your profile</h3>
-            <p>Enter your personal data and health background to personalize your care.</p>
-          </div>
-          <div class="step">
-            <img src="images/calendar.png" alt="Calendar" />
-            <h3>Book your appointment</h3>
-            <p>Choose a specialist, date, and time that fits your schedule – all online.</p>
-          </div>
-          <div class="step">
-            <img src="images/video.png" alt="Video" />
-            <h3>Attend your video consultation</h3>
-            <p>Connect with your endocrinologist through secure video chat and receive treatment guidance.</p>
-          </div>
-        </div>
-      </section>
+    <button class="btn filter">Search</button>
+  </div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section id="features" class="how-it-works">
+  <h2 data-i18n="howWorks">How HormonalCare Works</h2>
+  <p class="section-sub">A simple and efficient process to help you connect with specialists and track your hormonal health.</p>
+  <div class="steps">
+    <div class="step">
+      <img src="images/profile.png" alt="Profile" />
+      <h3>Create your profile</h3>
+      <p>Enter your personal data and health background to personalize your care.</p>
+    </div>
+    <div class="step">
+      <img src="images/calendar.png" alt="Calendar" />
+      <h3>Book your appointment</h3>
+      <p>Choose a specialist, date, and time that fits your schedule – all online.</p>
+    </div>
+    <div class="step">
+      <img src="images/video.png" alt="Video" />
+      <h3>Attend your video consultation</h3>
+      <p>Connect with your endocrinologist through secure video chat and receive treatment guidance.</p>
+    </div>
+  </div>
+</section>
 
       <!-- PLANS -->
       <section id="plans" class="plans">
@@ -118,53 +124,54 @@
           </div>
         </div>
       </section>
-
       <!-- TESTIMONIALS -->
       <section id="testimonials" class="testimonials">
-        <h2>Trusted by Patients and Specialists Across Peru</h2>
-        <p class="section-sub">Discover how HormonalCare is improving lives through efficient medical tracking and virtual consultations.</p>
+        <h2 data-i18n="trustedBy">Trusted by Patients and Specialists Across Peru</h2>
+        <p class="section-sub" data-i18n="testimonialsDesc">
+          Discover how HormonalCare is improving lives through efficient medical tracking and virtual consultations.
+        </p>
         <div class="testimonial-cards">
           <div class="testimonial">
             <img src="images/vizeth.jpeg" alt="Vizeh Robert" class="testimonial-avatar" />
             <div class="testimonial-header">
               <div>
-                <strong>Vizeh Robert</strong>
-                <span class="testimonial-location">Lima, Perú</span>
+                <strong data-i18n="testimonial1Name">Vizeh Robert</strong>
+                <span class="testimonial-location" data-i18n="testimonial1Location">Lima, Perú</span>
               </div>
               <span class="testimonial-rating">4.5</span>
             </div>
-            <p class="testimonial-text">“Thanks to HormonalCare, I was able to consult with a specialist from home. The platform is intuitive and saved me from long clinic waits.”</p>
+            <p class="testimonial-text" data-i18n="testimonial1Text">
+              “Thanks to HormonalCare, I was able to consult with a specialist from home. The platform is intuitive and saved me from long clinic waits.”
+            </p>
           </div>
           <div class="testimonial">
             <img src="images/doctor.jpeg" alt="Dr. Javier Meza" class="testimonial-avatar" />
             <div class="testimonial-header">
               <div>
-                <strong>Dr. Javier Meza</strong>
-                <span class="testimonial-location">Callao, Perú</span>
+                <strong data-i18n="testimonial2Name">Dr. Javier Meza</strong>
+                <span class="testimonial-location" data-i18n="testimonial2Location">Callao, Perú</span>
               </div>
               <span class="testimonial-rating">4.5</span>
             </div>
-            <p class="testimonial-text">“As an endocrinologist, HormonalCare helps me organize my patients, review uploaded results, and follow up efficiently from anywhere.”</p>
+            <p class="testimonial-text" data-i18n="testimonial2Text">
+              “As an endocrinologist, HormonalCare helps me organize my patients, review uploaded results, and follow up efficiently from anywhere.”
+            </p>
           </div>
           <div class="testimonial">
             <img src="images/ana.jpeg" alt="Ana Lucía Pérez" class="testimonial-avatar" />
             <div class="testimonial-header">
               <div>
-                <strong>Ana Lucía Pérez</strong>
-                <span class="testimonial-location">San Juan de Lurigancho</span>
+                <strong data-i18n="testimonial3Name">Ana Lucía Pérez</strong>
+                <span class="testimonial-location" data-i18n="testimonial3Location">San Juan de Lurigancho</span>
               </div>
               <span class="testimonial-rating">4.5</span>
             </div>
-            <p class="testimonial-text">“I used to wait over 2 weeks for an appointment. Now with HormonalCare, I receive treatment adjustments in just one call.”</p>
+            <p class="testimonial-text" data-i18n="testimonial3Text">
+              “I used to wait over 2 weeks for an appointment. Now with HormonalCare, I receive treatment adjustments in just one call.”
+            </p>
           </div>
         </div>
-        <div class="carousel-controls">
-          <span class="dot"></span><span class="dot active"></span><span class="dot"></span>
-          <button class="arrow">←</button>
-          <button class="arrow">→</button>
-        </div>
       </section>
-    </main>
 
     <!-- FOOTER + SCRIPTS -->
     <script>
@@ -213,11 +220,24 @@
       <div class="footer-col brand">
         <img src="images/logo.png" alt="HormonalCare logo" class="footer-logo" />
         <p>Our vision is to provide convenience and help increase your sales/business.</p>
+
         <div class="social-icons">
-          <a href="#"><img src="images/icon-fb.png" alt="Facebook"></a>
-          <a href="#"><img src="images/icon-x.png" alt="Twitter"></a>
-          <a href="#"><img src="images/icon-ig.png" alt="Instagram"></a>
+          <div class="social-icons" style="text-decoration: none;">
+            <a href="https://www.facebook.com/" target="_blank" style="text-decoration: none;">
+              <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank" style="text-decoration: none;">
+              <img src="images/twiiter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" style="text-decoration: none;">
+              <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/Grupo-Diseno-los-hormonales" target="_blank">
+              <img src="images/github.png" alt="GitHub" />
+            </a>
+          </div>
         </div>
+        
       </div>
       <div class="footer-col">
         <h4>About</h4>
@@ -240,15 +260,16 @@
       <div class="footer-col">
         <h4>Socials</h4>
         <ul>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li><a href="https://discord.com/" target="_blank">Discord</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>  
+          <li><a href="https://github.com/Grupo-Diseno-los-hormonales" target="_blank">Github</a></li>  
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy;2022 Company Name. All rights reserved</p>
+      <p>&copy;2025 HormonalCare. All rights reserved</p>
       <div class="footer-links">
         <a href="#">Privacy & Policy</a>
         <a href="#">Terms & Condition</a>
