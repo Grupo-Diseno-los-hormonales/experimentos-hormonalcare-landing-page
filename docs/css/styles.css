@@ -781,3 +781,63 @@
     margin-top: 0.5rem;
   }
 }
+
+
+/* ========== ABOUT TEAM ========== */
+.team-section {
+  padding: 80px 10%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  color: #8F7193;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-card {
+  background-color: #f9f3fc;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  margin-bottom: 0.5rem;
+  color: #2c2c2c;
+  font-size: 1.1rem;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
