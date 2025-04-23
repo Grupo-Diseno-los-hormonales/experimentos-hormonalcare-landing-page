@@ -841,3 +841,149 @@
     align-items: center;
   }
 }
+
+
+/* ========== ABOUT MISSION + VISION ========== */
+.about-wrapper {
+  background: linear-gradient(to bottom, #fdf5ff, #ffffff);
+  padding: 40px 10% 30px;
+  text-align: center;
+}
+
+.about-block {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.about-intro {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  margin-top: 10px;
+}
+
+.about-card {
+  background-color: #fff;
+  padding: 1.8rem 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.about-card h2 {
+  color: #8F7193;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.about-card p,
+.about-card ul {
+  color: #444;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-card ul {
+  padding-left: 1rem;
+}
+
+.about-card ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    padding: 30px 6% 20px;
+  }
+
+  .about-img {
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-card {
+    text-align: center;
+    padding: 1.6rem 1.2rem;
+  }
+
+  .about-columns {
+    gap: 1.5rem;
+  }
+}
+
+/* ========== SUPPORT SECTION ========== */
+.support-section {
+  background: #f8f0fa;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.support-section h2 {
+  font-size: 2rem;
+  color: #8F7193;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.support-sub {
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.support-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.support-form input,
+.support-form textarea {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  width: 100%;
+  resize: vertical;
+}
+
+.support-form textarea {
+  min-height: 120px;
+}
+
+.support-link {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.support-link a {
+  color: #8F7193;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .support-section {
+    padding: 40px 6%;
+  }
+}
